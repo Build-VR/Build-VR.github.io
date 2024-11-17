@@ -17,12 +17,13 @@ body {
 header {
     background-color: #d4a017;
     width: 100%;
-    padding: 20px;
     text-align: center;
 }
 
 .logo img {
-    height: 40px;
+    width: 75px;
+    height: auto;
+    margin: 10px;
 }
 
 .login-section {
@@ -74,6 +75,11 @@ form input {
 
 .login-section a:hover {
     text-decoration: underline;
+    margin-top: 15px;
+}
+
+.login-section p:last-of-type {
+    margin-top: 20px;
 }
 
 footer {
