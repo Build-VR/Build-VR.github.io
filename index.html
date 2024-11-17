@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -24,96 +24,130 @@
     </header>
 
     <section class="Pie">
-        <h1>BuildVR</h1>
-        <p>"Entrenamiento de calidad para una mejor construcción"</p>
-        <button class="contact-btn">Contáctanos</button>
-
         <div class="contenedor-slider">
+            <!-- Texto y botón -->
+            <div class="texto">
+                <h1>BuildVR</h1>
+                <p>"Entrenamiento de calidad para una mejor construcción"</p>
+                <a href="contactanos.html"><button class="contact-btn">Contáctanos</button></a>
+            </div>
+    
+            <!-- Imagenes con movimiento -->
             <div class="slider">
                 <div class="slides">
                     <div class="slide active" id="slide-1">
-                        <img src="slide1.jpg" alt="Imagen 1">
+                        <img src="assets/images/imagen1.png" alt="Imagen 1">
                     </div>
                     <div class="slide" id="slide-2">
-                        <img src="slide2.jpg" alt="Imagen 2">
+                        <img src="assets/images/imagen2.png" alt="Imagen 2">
                     </div>
                     <div class="slide" id="slide-3">
-                        <img src="slide3.jpg" alt="Imagen 3">
+                        <img src="assets/images/imagen3.png" alt="Imagen 3">
                     </div>
                     <div class="slide" id="slide-4">
-                        <img src="slide4.jpg" alt="Imagen 4">
+                        <img src="assets/images/imagen4.png" alt="Imagen 4">
                     </div>
                     <div class="slide" id="slide-5">
-                        <img src="slide4.jpg" alt="Imagen 5">
+                        <img src="assets/images/imagen5.png" alt="Imagen 5">
                     </div>
                 </div>
-
-                <!-- Flechas de navegación -->
+    
+                <!-- Flechas de navegación NO TOCAR PORFAVOR-->
                 <button class="prev" onclick="prevSlide()">&#10094;</button>
                 <button class="next" onclick="nextSlide()">&#10095;</button>
             </div>
         </div>
     </section>
 
-    <section id="quienes-somos" class="Contenido">
+    <section id="quienes-somos" class="Contenido quienes-somos">
         <h2>¿Quiénes somos?</h2>
-        <p>Somos una empresa dedicada a ofrecer soluciones innovadoras de entrenamiento en el ámbito de la construcción utilizando realidad virtual...</p>
+        <div class="info">
+
+            <div class="texto">
+                <p>VRWorkers es un startup innovador de la Universidad Peruana de Ciencias Aplicadas (UPC) que utiliza tecnología avanzada para revolucionar el sector de la construcción civil mediante el entrenamiento en realidad virtual. Nuestro producto principal, BuildVR, permite que los trabajadores de la construcción se capaciten de forma práctica y segura, aprendiendo habilidades cruciales sin los riesgos de una capacitación presencial en obra.</p>
+            </div>
+
+            <img src="assets/images/logo_letra.png" alt="Logo de VRWorkers" class="logo-quienes-somos">
+        </div>
+
         <div class="mision-vision">
             <div class="mision">
                 <h3>Misión</h3>
-                <p>Transformar la industria de la construcción civil mediante la tecnología VR.</p>
+                <p>Transformar la industria de la construcción civil, integrando tecnologías avanzadas que fortalezcan las habilidades de los trabajadores, mejoren la seguridad en el trabajo y optimicen los procesos de construcción en el Perú.</p>
             </div>
             <div class="vision">
                 <h3>Visión</h3>
-                <p>Convertirnos en líderes globales en tecnología educativa para construcción.</p>
+                <p>Convertirnos en líderes globales en tecnología educativa para la construcción civil, estableciendo un estándar que prepare a una fuerza laboral segura y calificada.</p>
             </div>
         </div>
     </section>
 
-    <section id="beneficios-vr" class="Contenido">
-        <h2>Beneficios del VR</h2>
-        <div class="beneficio">
-            <h3>Reducción de Riesgos</h3>
-            <p>Los trabajadores pueden aprender y practicar tareas de construcción en un entorno seguro...</p>
-        </div>
-        <div class="beneficio">
-            <h3>Capacitación Accesible y Personalizada</h3>
-            <p>BuildVR está diseñado especialmente para el contexto y las normativas locales...</p>
-        </div>
-        <div class="beneficio">
-            <h3>Mejora en Productividad y Calidad</h3>
-            <p>BuildVR permite a las empresas de construcción reducir tiempos de formación...</p>
+    <section id="beneficios-vr" class="Contenido beneficios">
+        <h2>Beneficios de BuildVR</h2>
+        <div class="beneficios-container">
+            <div class="beneficio">
+                <h3>Reducción de Riesgos</h3>
+                <p>Los trabajadores pueden aprender y practicar tareas de construcción en un entorno seguro, eliminando el riesgo de accidentes en obra y asegurando la calidad del proyecto.</p>
+            </div>
+            <div class="beneficio">
+                <h3>Capacitación Accesible y Personalizada</h3>
+                <p>BuildVR está diseñado especialmente para el contexto y las normativas locales, ofreciendo módulos adaptados a las necesidades específicas de obra.</p>
+            </div>
+            <div class="beneficio">
+                <h3>Mejora en Productividad y Calidad</h3>
+                <p>BuildVR permite a las empresas de construcción reducir costos de formación, mejorar la retención del conocimiento y aumentar la eficiencia operativa.</p>
+            </div>
         </div>
     </section>
 
-    <section id="catalogo-cursos" class="Contenido">
+    <section id="catalogo-cursos" class="Contenido catalogo-cursos">
         <h2>Catálogo de cursos</h2>
-        <div class="cursos">
-            <div class="curso">Seguridad en Construcción</div>
-            <div class="curso">Plataformas Elevadoras</div>
-            <div class="curso">Prevención de Accidentes</div>
-            <div class="curso">Instalaciones Eléctricas</div>
+        <div class="cursos-container">
+            <div class="curso">
+                <p>Seguridad en Construcción</p>
+                <img src="assets/images/seguridad_construcción.png" alt="Seguridad en Construcción">
+            </div>
+            <div class="curso">
+                <p>Plataformas Elevadoras</p>
+                <img src="assets/images/plataforma_elevadoras.png" alt="Plataformas Elevadoras">
+            </div>
+            <div class="curso">
+                <p>Prevención de Accidentes</p>
+                <img src="assets/images/Accidentes.png" alt="Prevención de Accidentes">
+            </div>
+            <div class="curso">
+                <p>Instalaciones Eléctricas</p>
+                <img src="assets/images/instalacion_electrica.png" alt="Instalaciones Eléctricas">
+            </div>
         </div>
     </section>
 
     <section id="descarga" class="Contenido">
         <h2>Descarga "BuildVR"</h2>
-        <p>Puedes descargar nuestra aplicación desde la tienda oficial para comenzar tu entrenamiento virtual hoy mismo...</p>
-        <a href="https://play.google.com/store/games?device=windows&pli=1" target="_blank"><img src="googleplay.png" alt="Google Play"></a>
-        <a href="https://www.apple.com/app-store/" target="_blank"><img src="appstore.png" alt="App Store"></a>
+        <p>Puedes descargar nuestra aplicación desde la tienda oficial para comenzar tu entrenamiento virtual hoy mismo:</p>
+        <a href="https://play.google.com/store/games?device=windows&pli=1" target="_blank"><img src="assets/images/google_play_store.jpg" alt="Google Play"></a>
+        <a href="https://www.apple.com/app-store/" target="_blank"><img src="assets/images/app_store.jpg" alt="App Store"></a>
     </section>
 
     <section id="requisitos" class="Contenido">
         <h2>Requisitos</h2>
-        <ul>
-            <li>Procesador: Snapdragon 800+ (Android), A8+ (iOS) o equivalente</li>
-            <li>RAM: Mínimo 4GB+</li>
-            <li>GPU: Adreno 330+ (Android), Apple GPU+ (iOS) o equivalente</li>
-            <li>Resolución: Mínima de 1080p</li>
-            <li>Tasa de Refresco: 60 Hz o superior</li>
-            <li>Almacenamiento: 250 MB</li>
-        </ul>
+        <div class="requisitos-contenedor">
+            <div class="texto-requisitos">
+                <ul>
+                    <li>Procesador: Snapdragon 800+ (Android), A8+ (iOS) o equivalente</li>
+                    <li>RAM: Mínimo 4GB+</li>
+                    <li>GPU: Adreno 330+ (Android), Apple GPU+ (iOS) o equivalente</li>
+                    <li>Resolución: Mínima de 1080p</li>
+                    <li>Tasa de Refresco: 60 Hz o superior</li>
+                    <li>Almacenamiento: 250 MB</li>
+                </ul>
+            </div>
+            <div class="imagen-requisitos">
+                <img src="assets/images/logo_letra.png" alt="Logo de VRWorkers" class="logo-quienes-somos">
+            </div>
+        </div>
     </section>
+    
 
 <footer>
     <a href="preguntas.html" class="Ayuda_flotante" id="AyudaBurbuja">
@@ -122,7 +156,7 @@
         </div>
     </a>
 
-    <a href="https://www.figma.com/design/FLW2U7KdpUcom6ohuuhYQS/BuildVR?node-id=20-55&node-type=canvas&t=GvjNOfWFg5EUkXb9-0" target="_blank" class="Ingresar_aplicacion" id="Directoapp">
+    <a href="https://www.figma.com/proto/FLW2U7KdpUcom6ohuuhYQS/BuildVR?node-id=20-1874&node-type=canvas&t=Yh0thYQUEKyatfWn-0&scaling=min-zoom&content-scaling=fixed&page-id=20%3A55&starting-point-node-id=20%3A1874" target="_blank" class="Ingresar_aplicacion" id="Directoapp">
         <div class="estrella">
             <ion-icon name="star"></ion-icon>
         </div>
@@ -130,7 +164,6 @@
 
     <p>© 2024 BuildVR</p>
 </footer>
-
     
     <script src="assets/scripts/script.js"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
