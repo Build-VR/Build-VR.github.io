@@ -17,12 +17,13 @@ body {
 header {
     background-color: #d4a017;
     width: 100%;
-    padding: 20px;
     text-align: center;
 }
 
 .logo img {
-    height: 40px;
+    width: 75px;
+    height: auto;
+    margin: 10px;
 }
 
 .register-section {
@@ -53,7 +54,7 @@ form input {
 
 .register-btn {
     background-color: #d4a017;
-    color: white;
+    color: rgb(0, 0, 0);
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -64,7 +65,7 @@ footer {
     width: 100%;
     text-align: center;
     background-color: #d4a017;
-    padding: 20px;
+    padding: 14px;
     color: black;
     position: absolute;
     bottom: 0;
