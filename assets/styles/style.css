@@ -12,14 +12,17 @@ body {
 
 header {
     background-color: #d4a017;
-    padding: 40px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: left;
 }
 
 .logo img {
-    height: 40px;
+    width: 75px;
+    height: auto;
+    margin: 7px;
+    margin-left: 43px;
 }
 
 nav {
@@ -35,7 +38,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 35px;
 }
 
 nav ul li a {
@@ -51,6 +54,7 @@ nav ul li a {
     padding: 8px 16px;
     cursor: pointer;
     border-radius: 5px;
+    margin-right: 45px;
 }
 
 .Pie {
@@ -81,11 +85,12 @@ nav ul li a {
 
 .contenedor-slider {
     display: flex;
-    justify-content: right;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .slider {
-    width: 300px;
+    max-width: 300px;
     position: relative;
 }
 
@@ -106,9 +111,11 @@ nav ul li a {
     position: relative;
 }
 
+
 .slide img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 button.prev,
@@ -184,4 +191,188 @@ footer a {
 
 footer p {
     font-size: 14px;
+}
+
+.quienes-somos {
+    background-color: #dad8d8;
+    padding: 50px;
+
+}
+
+.quienes-somos .info {
+    font-size: 48px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    line-height: 2.5;
+}
+
+
+#quienes-somos .logo-quienes-somos {
+    max-width: 150px;
+    height: auto;
+}
+
+.quienes-somos .mision-vision {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    text-align: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.quienes-somos .mision,
+.quienes-somos .vision {
+    flex: 1 1 calc(50% - 10px);
+    background-color: #d4a017;
+    border: 1px solid #d4a017;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.quienes-somos .mision h3,
+.quienes-somos .vision h3 {
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.quienes-somos .mision p,
+.quienes-somos .vision p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #000000;
+}
+
+#beneficios-vr {
+    background-color: #dad8d8;
+    padding: 50px;
+    text-align: center;
+}
+
+#beneficios-vr h2 {
+    text-align: left;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #000000;
+}
+
+#beneficios-vr .beneficios-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+#beneficios-vr .beneficio {
+    flex: 1 1 calc(30% - 20px);
+    background-color: #d4a017;
+    padding: 20px;
+    border: 1px solid #d4a017;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#beneficios-vr .beneficio h3 {
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+#beneficios-vr .beneficio p {
+    font-size: 14px;
+    color: #000000;
+    line-height: 1.5;
+}
+
+#catalogo-cursos {
+    background-color: #dad8d8;
+    padding: 50px;
+    text-align: center;
+}
+
+.catalogo-cursos h2 {
+    text-align: left;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #000000;
+}
+
+.catalogo-cursos .cursos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.catalogo-cursos .curso {
+
+    background-color: #d4a017;
+    border: 1px solid #d4a017;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#catalogo-cursos .curso:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+#catalogo-cursos .curso img {
+    width: 100%;
+    height: 205px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+
+}
+
+#catalogo-cursos .curso p {
+    padding: 10px;
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+}
+
+#descarga img {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    margin-top: 30px;
+    margin-left: 300px;
+    border-radius: 8px;
+}
+
+#requisitos .requisitos-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#requisitos .texto-requisitos {
+    flex: 1;
+}
+
+#requisitos .imagen-requisitos {
+    flex: 0 0 auto;
+}
+
+#requisitos .imagen-requisitos img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+#requisitos ul {
+    list-style: none;
+    font-size: 16px;
+}
+
+#requisitos ul li {
+    margin-bottom: 10px;
 }
