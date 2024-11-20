@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+}
+
+header {
+    background-color: #d4a017;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+.logo img {
+    width: 75px;
+    height: auto;
+    margin: 7px;
+    margin-left: 43px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    margin: 0 35px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.login-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 45px;
+}
+
+.Pie {
+    padding: 50px;
+    background-color: #ffffff;
+}
+
+.Pie h1 {
+    text-align: left;
+    font-size: 48px;
+}
+
+.Pie p {
+    text-align: left;
+    font-size: 15px;
+    margin: 20px 0;
+}
+
+.contact-btn {
+    text-align: left;
+    background-color: #d4a017;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contenedor-slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.slider {
+    max-width: 300px;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    position: relative;
+}
+
+.slide {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    transition: opacity 0.6s ease;
+}
+
+.slide.active {
+    opacity: 1;
+    position: relative;
+}
+
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+button.prev,
+button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button.prev {
+    left: 0;
+}
+
+button.next {
+    right: 0;
+}
+
+button.prev.hidden,
+button.next.hidden {
+    display: none;
+}
+
+.Contenido {
+    padding: 50px;
+    background-color: #dad8d8;
+    margin: 20px;
+}
+
+.Contenido h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.Contenido p {
+    font-size: 16px;
+}
+
+
+footer {
+    background-color: #d4a017;
+    padding: 20px;
+    text-align: center;
+    color: black;
+    position: relative;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.Ayuda_flotante {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.Ingresar_aplicacion {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+footer p {
+    font-size: 14px;
+}
+
+.quienes-somos {
+    background-color: #dad8d8;
+    padding: 50px;
+
+}
+
+.quienes-somos .info {
+    font-size: 48px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    line-height: 2.5;
+}
+
+
+#quienes-somos .logo-quienes-somos {
+    max-width: 150px;
+    height: auto;
+}
+
+.quienes-somos .mision-vision {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    text-align: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.quienes-somos .mision,
+.quienes-somos .vision {
+    flex: 1 1 calc(50% - 10px);
+    background-color: #d4a017;
+    border: 1px solid #d4a017;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.quienes-somos .mision h3,
+.quienes-somos .vision h3 {
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.quienes-somos .mision p,
+.quienes-somos .vision p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #000000;
+}
+
+#beneficios-vr {
+    background-color: #dad8d8;
+    padding: 50px;
+    text-align: center;
+}
+
+#beneficios-vr h2 {
+    text-align: left;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #000000;
+}
+
+#beneficios-vr .beneficios-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+#beneficios-vr .beneficio {
+    flex: 1 1 calc(30% - 20px);
+    background-color: #d4a017;
+    padding: 20px;
+    border: 1px solid #d4a017;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#beneficios-vr .beneficio h3 {
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+#beneficios-vr .beneficio p {
+    font-size: 14px;
+    color: #000000;
+    line-height: 1.5;
+}
+
+#catalogo-cursos {
+    background-color: #dad8d8;
+    padding: 50px;
+    text-align: center;
+}
+
+.catalogo-cursos h2 {
+    text-align: left;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #000000;
+}
+
+.catalogo-cursos .cursos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.catalogo-cursos .curso {
+
+    background-color: #d4a017;
+    border: 1px solid #d4a017;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#catalogo-cursos .curso:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+#catalogo-cursos .curso img {
+    width: 100%;
+    height: 205px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+
+}
+
+#catalogo-cursos .curso p {
+    padding: 10px;
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+}
+
+#descarga img {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    margin-top: 30px;
+    margin-left: 300px;
+    border-radius: 8px;
+}
+
+#requisitos .requisitos-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#requisitos .texto-requisitos {
+    flex: 1;
+}
+
+#requisitos .imagen-requisitos {
+    flex: 0 0 auto;
+}
+
+#requisitos .imagen-requisitos img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+#requisitos ul {
+    list-style: none;
+    font-size: 16px;
+}
+
+#requisitos ul li {
+    margin-bottom: 10px;
+}
+
+#videosTF {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#videosTF .videos-container {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px;
+}
+
+#videosTF .about-the-product,
+#videosTF .about-the-team {
+    flex: 1;
+}
+
+#videosTF h3 {
+    margin-bottom: 15px;
+}
+
+#videosTF iframe {
+    border-radius: 15px;
+    overflow: hidden;
+}
