@@ -376,3 +376,29 @@ footer p {
 #requisitos ul li {
     margin-bottom: 10px;
 }
+
+#videosTF {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#videosTF .videos-container {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px;
+}
+
+#videosTF .about-the-product,
+#videosTF .about-the-team {
+    flex: 1;
+}
+
+#videosTF h3 {
+    margin-bottom: 15px;
+}
+
+#videosTF iframe {
+    border-radius: 15px;
+    overflow: hidden;
+}
